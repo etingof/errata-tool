@@ -12,6 +12,7 @@ install:
     #   virtualenv.
   - pip install pytest-flake8
   - pip install pytest-cov python-coveralls
+  - flake8 --version
 script:
   - python setup.py test -v -a "--cov-config .coveragerc --cov=errata_tool"
 after_success:
